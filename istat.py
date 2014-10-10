@@ -9,20 +9,15 @@ those not duplicates.
 The duplicates are always in close relation to each other, the row above or the row 
 next to it.
 
-I choosed to store the 2 latest rows in a list, but that depends on how the log looks like
+I choosed to store the x latest rows in a list, but that depends on how the log looks like
 
 Run the command and use shell redirection to redirect the output to a new logfile. 
 
-$ python3 scan_log.py > newlog.txt
+$ python3 istat.py > newlog.txt
 
 First I made a program scanning the logfile "removing" duplicates. Then I added commandline 
 options to make the script look more like a actual command line utility that can be extended
 to do other operations with my logfiles.
-
-Exit status can be;
-0 = Ok
-1 = Failed in usage, wrong parameters
-2 = Failed during execution
 
 """
 
